@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domein.shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+    
+        :root {
+            --gray: #899CA0;
+            --dark-green: #1C2B32;
+        }
+
+       
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-green);
+            background-color: #f4f4f4;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            color: white;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .header-content {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+            color: black;
+        }
+
+        header h1 {
+            font-size: 100px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            margin-bottom: 20px;
+            font-size: 10px;
+        }
+
+        header form {
+            display: flex;
+            justify-content: center;
+        }
+
+        header input {
+            padding: 10px;
+            border: none;
+            border-radius: 50px 0 0 50px;
+            width: 220px;
+            background-color: transparent;
+            color: rgba(255, 255, 255, 0.8);
+            border: 1px solid hsl(0, 0%, 2%);
+        }
+
+        header button {
+            padding: 10px 20px;
+            border: none;
+            background-color: var(--dark-green);
+            color: white;
+            border-radius: 0 50px 50px 0;
+            cursor: pointer;
+        }
+
+        .image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .mountains {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+      
+        .testimonials {
+    margin-bottom: 40px;
+}
+
+.testimonials h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.testimonial-grid {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.testimonial {
+    background-color: white;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.quote-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.quote-icon {
+    width: 24px;
+    height: 24px;
+    margin-top: 0px;
+}
+
+.quote {
+    font-style: italic;
+    color: #555;
+    margin: 0; 
+    line-height: 1.5;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left:40px;
+}
+
+.author img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+.name {
+    font-weight: none;
+    color: var(--dark-green);
+    font-style: italic;
+}
+
+
+.testimonial {
+    border: 1px solid #e0e0e0;
+}
+    
+
+       
+        .contact {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .contact a {
+            color: var(--gray);
+            text-decoration: underline;
+        }
+
+        .contact a:hover {
+            text-decoration: none;
+        }
+        .contact p {
+            text-align: left;
+            margin: 0; 
+        }
+
+     
+        .faq {
+            margin-bottom: 60px; 
+            border:none;
+          
+        }
+
+        .faq details {
+            background-color: none;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            cursor: pointer;
+          
+        }
+
+        .faq summary {
+            font-weight: none;
+            
+        }
+
+        .faq p {
+            margin-top: 10px;
+        }
+        .fagg{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        
+        footer {
+            background-color: var(--dark-green);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        ::placeholder {
+            color: hsl(0, 8%, 8%);
+        }
+        .button{
+            padding: 15px 15px 15px 15px;
+            margin-left:100px;
+            border-radius: 50px;
+            color:#fbf8f8;
+            background-color:black;
+            display: block;
+            border: none; 
+            cursor: pointer; 
+            margin-left: 0;
+            margin-top:10px; 
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Domein.shop</h1>
+            <p>Jouw domeinnaam registreren in seconden / minuten!</p>
+            <form>
+                <input type="text" placeholder="Is jouw domein nog vrij?">
+                <button type="submit">Check beschikbaarheid</button>
+            </form>
+        </div>
+        <div class="image-container">
+            <img class="mountains" src="img/mountains.jpg" alt="Mountains">
+        </div>
+    </header>
+
+    <main>
+        <section class="testimonials">
+            <h2>Wat klanten zeggen over ons</h2>
+            <div class="testimonial-grid">
+            
+                <div class="testimonial">
+                    <div class="quote-container">
+                        <img src="img/quote-left.png" alt="Quote Icon" class="quote-icon">
+                        <p class="quote">"Al jaren klant bij Domein.shop. De service is goed en medewerkers zijn zeer klantvriendelijk. Snelle reactie, zelfs op momenten dat je het niet verwacht."</p>
+                    </div>
+                    <div class="author">
+                        <img src="img/avatar-jane.png" alt="Jane Doe">
+                        <div>
+                            <p class="name">Jane Doe, Managing Director</p>
+                          
+                        </div>
+                    </div>
+                </div>
+    
+             
+                <div class="testimonial">
+                    <div class="quote-container">
+                        <img src="img/quote-left.png" alt="Quote Icon" class="quote-icon">
+                        <p class="quote">"Ik ben tevreden over Domein.shop. Met name de snelle reactie op mijn vragen en goede service maakt dat ik Domein.shop aan iedereen aanbeveel."</p>
+                    </div>
+                    <div class="author">
+                        <img src="img/avatar-john.png" alt="John Smith">
+                        <div>
+                            <p class="name">John Smith, Frontend Developer</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Wij staan voor je klaar</h2>
+            <img src="img/callcenter.jpg" alt="Callcenter">
+            <p>Je kunt 7 dagen per week bij ons terecht. Ons team van ervaren medewerkers helpt je graag op weg.</p>
+            <button class="button">Neem contact op</button>
+        </section>
+
+        <section class="faq">
+            <h2  class="fagg">Veelgestelde vragen</h2>
+            <details>
+                <summary>Wat is een goede domeinnaam?</summary>
+                <p>Een goede domeinnaam is kort, makkelijk te onthouden en relevant voor je bedrijf of website.</p>
+            </details>
+            <details>
+                <summary>Welke extensie moet ik kiezen voor mijn domeinnaam?</summary>
+                <p>Kies een extensie die past bij je doelgroep en het doel van je website, zoals .nl voor Nederland of .com voor internationaal gebruik.</p>
+            </details>
+            <details>
+                <summary>Wat moet ik doen als mijn domeinnaam al geregistreerd is?</summary>
+                <p>Als je domeinnaam al geregistreerd is, kun je een alternatieve naam bedenken of contact opnemen met de huidige eigenaar.</p>
+            </details>
+            <details>
+                <summary>Is het mogelijk meerdere domeinnamen te registreren?</summary>
+                <p>Ja, het is mogelijk om meerdere domeinnamen te registreren. Dit kan handig zijn voor verschillende projecten of om je merk te beschermen.</p>
+            </details>
+            <details>
+                <summary>Is het mogelijk een domeinnaam te registreren en deze niet te gebruiken?</summary>
+                <p>Ja, je kunt een domeinnaam registreren zonder deze direct te gebruiken. Dit kan handig zijn voor toekomstige projecten.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2022, all rights reserved.</p>
+    </footer>
+</body>
+</html>
